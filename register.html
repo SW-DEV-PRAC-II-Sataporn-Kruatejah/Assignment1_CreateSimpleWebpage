@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CAMPCON FESTIVAL 2023</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <div id="page-wrapper">
+    <div class="container">
+      <div class="panel event-panel">
+        <div class="event-image">
+          <img src="cover.jpg" alt="SEA BREEZE กิน ลม ชม ทราย 2023">
+        </div>
+        <div class="event-title">
+          <h1 class="event-name center">SEA BREEZE กิน ลม ชม ทราย 2023</h1>
+          <div class="event-detail center">
+            <table cellspacing="10">
+              <tr>
+                <td width="30px">📅</td>
+                <td>
+                  <div class=" text-left">
+                    17 - 24 พฤษภาคม 2023 (7 วัน)
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td width="30px">🕑</td>
+                <td>
+                  <div class=" text-left">
+                    10:00 - 21:00
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td width="30px">🗺️</td>
+                <td>
+                  <div class=" text-left">
+                    QSNCC (ศูนย์ประชุมฯ สิริกิติ์)
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="panel normal-panel">
+
+        <div class="panel-heading">
+          <h2 class="title center">ลงทะเบียน<h2>
+        </div>
+        <div class="panel-body">
+          <form style="margin: 0px 24px;">
+
+            <h3 style="margin-top: 0px;">ข้อมูลผู้ติดต่อ</h3>
+
+            <div style="padding: 0px 16px;">
+
+              <label for="companyName">ชื่อบริษัท</label>
+              <input type="text" id="companyName" name="companyName" required>
+
+              <label for="contactName">ชื่อผู้ติดต่อ</label>
+              <input type="text" id="contactName" name="contactName" required>
+
+              <label for="contactNumber">เบอร์ผู้ติดต่อ</label>
+              <input type="tel" id="contactNumber" name="contactNumber" required>
+            </div>
+
+            <h3>ข้อมูลบูธ</h3>
+
+            <div style="padding: 0px 16px;">
+
+              <label for="boothSize">ขนาดบูธ</label>
+              <select id="boothSize" name="boothSize" required>
+                <option value="10x10">10x10 ฟุต</option>
+                <option value="10x15">10x15 ฟุต</option>
+              </select>
+
+              <label for="numChairs">จำนวนเก้าอี้</label>
+              <input type="number" id="numChairs" name="numChairs" min="1" max="10">
+
+              <div class="checkbox-wrapper">
+                <input type="checkbox" id="tableNeeded" name="tableNeeded">
+                <label for="tableNeeded">ต้องการโต๊ะตั้งในบูธ</label>
+              </div>
+
+            </div>
+            <div class="center">
+              <input type="submit" value="ลงทะเบียน">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
