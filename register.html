@@ -56,20 +56,20 @@
           <h2 class="title center">ลงทะเบียน<h2>
         </div>
         <div class="panel-body">
-          <form style="margin: 0px 24px;">
+          <form id="registration-form" style="margin: 0px 24px;">
 
             <h3 style="margin-top: 0px;">ข้อมูลผู้ติดต่อ</h3>
 
             <div style="padding: 0px 16px;">
 
               <label for="companyName">ชื่อบริษัท</label>
-              <input type="text" id="companyName" name="companyName" required>
+              <input type="text" id="companyName" name="companyName">
 
               <label for="contactName">ชื่อผู้ติดต่อ</label>
-              <input type="text" id="contactName" name="contactName" required>
+              <input type="text" id="contactName" name="contactName">
 
               <label for="contactNumber">เบอร์ผู้ติดต่อ</label>
-              <input type="tel" id="contactNumber" name="contactNumber" required>
+              <input type="tel" id="contactNumber" name="contactNumber">
             </div>
 
             <h3>ข้อมูลบูธ</h3>
@@ -77,13 +77,14 @@
             <div style="padding: 0px 16px;">
 
               <label for="boothSize">ขนาดบูธ</label>
-              <select id="boothSize" name="boothSize" required>
+              <select id="boothSize" name="boothSize">
+                <option value="" selected disabled>เลือกขนาดบูธ</option>
                 <option value="10x10">10x10 ฟุต</option>
                 <option value="10x15">10x15 ฟุต</option>
               </select>
 
               <label for="numChairs">จำนวนเก้าอี้</label>
-              <input type="number" id="numChairs" name="numChairs" min="1" max="10">
+              <input type="number" id="numChairs" name="numChairs">
 
               <div class="checkbox-wrapper">
                 <input type="checkbox" id="tableNeeded" name="tableNeeded">
@@ -99,6 +100,9 @@
       </div>
     </div>
   </div>
+
+  <script src="register.js"></script>
+
 </body>
 
 </html>
